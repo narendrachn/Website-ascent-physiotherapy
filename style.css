@@ -1,0 +1,344 @@
+html{
+    font-size: 62.5%;  /*document font size is reduced to 62.5%*/
+}
+body{
+    font-family: sans-serif;  /*font family of the content is sans-serif*/
+    background-color: beige;
+    
+}
+header{
+    background-color: rgb(108, 238, 82);  /*Header background to each page*/
+}
+span img {                /*logo image in header*/
+    width: 350px;
+    height: 170px;
+}
+nav{
+    background-color: rgb(139, 184, 98);  /*Navigation bar background*/
+}
+nav ul{         /* Navigation in all pages*/
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: right;
+    
+}
+nav ul li{
+    padding: 10px;
+    font-size: 25px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+section{
+    height: 100%;
+    font-size: 20px;
+}
+.groupphoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+section img{
+    align-items: center;
+}
+   /*nav items border*/
+.home{
+    background-color: rgb(45, 44, 44);
+    border-radius: 5px;
+}
+.wrpcontent{       /* our team page class*/
+    display: flex;
+    
+
+}
+.block1{
+    font-family: 'Roboto', sans-serif;
+}
+article img{
+    width: 300px;
+    height: 450px ;
+    padding: 25px;
+
+    
+}
+
+.size{               /*index page catchup line class*/
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+table {          /*Table for services in product and services pages*/
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+caption {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 0;
+}
+  
+td,
+  th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+}
+tbody tr:hover {
+    background-color: #ddd;
+}
+tbody img{
+    height: 25%;
+    width: 25%;
+    
+}
+td.merge {
+    text-align: center;
+    font-style: italic;
+}
+tfoot {
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
+    background-color: #c5c5c5;
+}
+
+section p {                   /*contact page class*/
+    text-align: center;
+}
+section article{
+    display: flex;
+
+    padding: 25px;
+
+}
+#selection{             /* id selector in contact page*/
+    margin-left: 200px;
+}
+.liveimg{                /*contact page class*/
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+.liveimg img{              /* contact page image*/
+    width: 400px;
+    height: 350px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Buttons*/
+
+input[type="reset"] {
+    color: #0e7a0d;
+    padding: 12px 20px;
+    border: 1px solid #0e7a0d;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover {
+    background-color: #d1efe3;
+}
+
+input[type="submit"] {
+    background-color: #0e7a0d;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid #0e7a0d;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #00ab66;
+}
+
+/* Style */
+
+.wrapper-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.wrapper-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* form buttons */
+
+input,
+select,
+textarea {
+    font-size: 1em;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+textarea {
+    font-family: sans-serif;
+}
+
+fieldset {
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+}
+
+.label-required {
+    font-size: 0.8rem;
+    color: red;
+}
+
+
+
+footer{                        /*footer common*/
+    background-color: rgb(121, 229, 100);
+    height: 400px;
+    width: auto;
+}
+
+
+footer article{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.left{
+    line-height: 30px;
+}
+.right{
+    line-height: 30px;
+}
+footer article iframe{
+    height: 325px;
+    width: 400px;
+    margin-right: 10px;
+}
+footer span small{
+    color: white;
+    background-color: blue;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+                             /*page for Mobile view*/
+@media only screen and (max-width: 600px) {      
+    body {
+      background-color: lightblue;
+    }
+    span img {                /*logo image in header on mobile view*/
+        width: 150px;
+        height: 85px;
+    }
+
+    nav ul{         /* Navigation in all pages*/
+        list-style-type: none;
+        display: block;
+        flex-direction: column;
+        padding: 5px;
+        
+        
+    }
+    nav ul li{
+        padding: 3px;
+        font-size: 15px;
+        box-sizing: border-box;
+        
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        
+    }
+
+    .groupphoto {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    
+    }
+    
+    section {
+        width: 340px;
+        font-size: 10px;
+    }
+    .wrpcontent{       /* our team page class*/
+        display: block;
+    
+    }
+    .block1 {
+        display: block;
+    }
+
+    .size{               /*index page catchup line class*/
+        font-size: 20px;
+    }
+    #selection{             /* id selector in contact page*/
+        margin-left: 100px;
+    }
+    .liveimg{
+        display: block;
+    }
+
+    footer{                        /*footer common*/
+        background-color: rgb(86, 87, 86);
+        height: auto;
+        color: white;
+    }
+    footer article{
+        display: block;
+        /*justify-content: space-between;
+        font-size: 15px;*/
+    }
+    footer article iframe{
+        height: auto;
+        width: auto;
+    }
+
+
+  }
